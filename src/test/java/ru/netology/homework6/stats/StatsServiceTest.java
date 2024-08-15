@@ -1,15 +1,13 @@
-package ru.netology.homework6.service;
+package ru.netology.homework6.stats;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
-public class BusinessSellCalcServiceTest {
+public class StatsServiceTest {
 
     @Test
     public void shouldCalcAmount() {
-        BusinessSellCalcService service = new BusinessSellCalcService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expect = 180;
@@ -20,7 +18,7 @@ public class BusinessSellCalcServiceTest {
 
     @Test
     public void shouldCalcAverage() {
-        BusinessSellCalcService service = new BusinessSellCalcService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expect = 15;
@@ -31,7 +29,7 @@ public class BusinessSellCalcServiceTest {
 
     @Test
     public void shouldFindMonthWithMaxSale() {
-        BusinessSellCalcService service = new BusinessSellCalcService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expect = 7;
@@ -42,7 +40,7 @@ public class BusinessSellCalcServiceTest {
 
     @Test
     public void shouldFindMonthWithMinSale() {
-        BusinessSellCalcService service = new BusinessSellCalcService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expect = 8;
@@ -53,7 +51,7 @@ public class BusinessSellCalcServiceTest {
 
     @Test
     public void shouldCalcCntMonthUnderAverage() {
-        BusinessSellCalcService service = new BusinessSellCalcService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expect = 5;
@@ -64,7 +62,7 @@ public class BusinessSellCalcServiceTest {
 
     @Test
     public void shouldCalcCntMonthOverAverage() {
-        BusinessSellCalcService service = new BusinessSellCalcService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expect = 5;

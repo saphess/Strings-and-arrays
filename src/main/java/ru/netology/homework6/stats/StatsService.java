@@ -1,6 +1,6 @@
-package ru.netology.homework6.service;
+package ru.netology.homework6.stats;
 
-public class BusinessSellCalcService {
+public class StatsService {
 
     public long calcAmount(long[] sales) {
         long amount = 0;
